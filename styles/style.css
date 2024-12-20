@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://w.forfun.com/fetch/74/74f0aa30c1ab5899d3140722c43958e3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content {
+    margin: 0px auto;
+    width: 50%;
+    height: 70vh;
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(21, 24, 63, 0.07);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(21, 24, 63, 0.04);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 2px solid silver;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(27, 25, 25);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+button:active:focus {
+    border: 1px solid white;
+    opacity: 0.4;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-text img {
+    max-width: 100%;
+}
+
+.img-text span {
+    color: white;
+    font-size: 38px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.texts span:first-child {
+    color: white;
+    font-size: 48px;
+}
+
+.texts span:nth-child(2) {
+    color: white;
+    font-size: 20px;
+}
+
+.texts span:last-child {
+    color: silver;
+    font-size: 18px;
+}
+
+@media screen and (max-width:930px) {
+    .content {
+        margin: 0px auto;
+        width: 80%;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:493px) {
+    .content {
+        width: 90%;
+    }
+
+    .weather {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .content {
+        width: 90%;
+    }
+
+    .weather {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
